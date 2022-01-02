@@ -1,0 +1,61 @@
+/* @root{
+    #a = "--i:0";
+} */
+
+.cube-box{
+    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background: red;
+    animation: anima 5s linear infinite;
+    transition: 2s;
+    border-radius: 30%;
+    border-top: 5px solid rgb(126, 120, 120);
+    border-bottom: 5px solid rgb(126, 120, 120);
+
+
+}
+ @keyframes anima {
+     0%{
+         transform: rotateZ(180deg) translateZ(100px);
+         background: blue;
+         border-radius: 20%;
+     }
+     50%{
+         background: rgba(141, 233, 20, 0.986);
+        transform: rotate(0deg) translateZ(0px);
+        border-radius: 40%;
+    }
+     100%{
+         background: green;
+         border-radius: 20%;
+        transform: rotateZ(180deg) translateZ(100px);
+    }
+ }
+
+.cube #a {
+     background-color: white;
+     height: 50px;
+     width: 50px;
+     z-index: 1;
+     border-radius: 10px;
+     text-align: center;
+     line-height: 50px;
+ 
+    }
+   .cube-box h2{
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 18px;
+    }

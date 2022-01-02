@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Josefin+Sans&family=Poppins:ital,wght@0,200;1,200&display=swap');
+
+.PhotosBox{
+    height: auto;
+    width: 100vw;
+    font-family: 'EB Garamond', serif;
+
+}
+.PhotosBox .center-box{
+    display: flex;
+   justify-content: space-evenly;
+   height: 100%;
+    max-width: 1000px;
+    flex-wrap:wrap; 
+    align-items: center; 
+    margin: auto;
+    
+}
+.photos-container{
+     display: flex;
+     align-items: center;
+    flex-direction: column; 
+}
+.photos-container.img-zoom{
+    height: 100vh;
+    width: 1000px;
+    background: red;
+} 
+.photos-container h1{
+    font-size: 14px;
+}
+.photos-container h2{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    align-items: center;
+    text-transform: capitalize;
+    margin: 5px 0px;
+    font-weight: 400px;
+}
+.photos-container img{
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px rgb(75, 75, 75);
+    margin: 5px;
+    transition: 0.5s;
+}
+/* zooming imgs */
+.photos-container img.img-zoom{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    transition: 2s;
+    
+}
+.photos-container img:hover{
+    transform: scale(1.05);
+}
+.photos-container #btn-box  {
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: auto;
+    min-height: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    z-index: 2;
+    padding: 10px;
+    border-radius: 15px 15px 15px 0px;
+    
+} 
+.photos-container #btn-box.add{
+    display: flex;
+}
+#btn-box p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 5px;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.photos-container #btn-box .cancel-btn{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    font-size: 25px;
+    padding:0px 5px;
+    background-color: transparent;
+    border: none;
+}
