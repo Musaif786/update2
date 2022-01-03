@@ -65,7 +65,7 @@ const Slider= (props)=>{
         <div  id="d-flex" className="container-fluid d-flex carousel slide carousel-fade "   data-bs-ride="carousel">
         <h1 className="mb-2">{props.collections} {props.name}</h1>
            <div >
-               <img id="slider" src="./images/kitchen4.jpg " alt="" />
+               <img id="slider" src="./images/tvset1.jpeg " alt="" />
            </div>
            <div className="btns mt-0">
            <button onClick={pre}>Preview</button>

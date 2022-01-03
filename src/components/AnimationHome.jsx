@@ -12,7 +12,7 @@ const AnimationHome = () =>{
       setTimeout(abc, 16000);
  })
 
- const texts = `Hello Dear Customer Zayed welcome you with love and joy have a Nice day`;
+ const texts = ` Welcome to the ZFWork! We are thrilled to have someone with such impeccable taste amongst us`;
  let a=0;
  useEffect(()=>{
      let type = document.querySelector('#typ');

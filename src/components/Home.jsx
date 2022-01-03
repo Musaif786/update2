@@ -278,19 +278,19 @@ Send Mail
         <div className="container mt-3"> 
          <div className="row text-center ">
          <h1 className="text-center mb-5">Projects</h1>
-         <div className="col-6">
+         <div className="col-4">
              <div id="h-4-bar"><div></div></div>
              <div className="mt-2" id="counting" data-val="10">0</div>
           <p className="mt-3">Running Project's.</p>
           </div>
           
-          {/* <div className="col-4">
-             <div id="h-4-bar2"><div> </div>350+</div>
-          <p className="mt-3">Total Project's</p>
-         
-          </div>  */}
+          <div className="col-4">
+             <div id="h-4-bar2"><div></div></div>
+             <div className="mt-2" id="counting" data-val="40">0</div>
+          <p className="mt-3">Fourty plus Expert Worker's.</p>
+          </div>
           
-          <div className="col-6">
+          <div className="col-4">
              <div id="h-4-bar3"><div></div></div>
              <div className="mt-2" id="counting" data-val="385">0</div>
           <p className="mt-3">Successful Project's.</p>
@@ -306,7 +306,7 @@ Chairs, tables, beds, kitchen words, cupboards,tvsets  and cabinets. fence furni
          <div className="row ">
           <div className="col-10 my-5 mx-auto">
           <video width="100%" height="400px" loop controls  muted >
-  <source src="./videos/one.mp4" type="video/mp4"/>
+  <source src="./videos/two.mp4" type="video/mp4"/>
   
   Your browser does not support the video tag .
          </video>

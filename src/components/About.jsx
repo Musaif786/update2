@@ -3,6 +3,7 @@ import Animation from "./Animation";
 import Footer from "./Footer";
 import PhotosBox from "./PhotosBox";
 import Slider from "./Slider";
+import { Link } from "react-router-dom";
 const About= ()=>{
   const img1 = "./images/zayed.jpg" ;
     return(<>
@@ -12,26 +13,69 @@ const About= ()=>{
         <Slider name='About-us' />
 
         {/* text */}
-        <div className="container">
+        <div className="container mb-3">
         <h1 className="text-center">About Us.</h1>
-          <p className="my-2 text-center">Furniture is a big deal in the design industry. A well-executed concept can result in a timeless piece of furniture that never goes out of style.
+          <p className="my-2 text-center">  
+          Myself <span> Mohammed Zayed </span>and i'm a professional  furniture designer interior to all type's of wood works, and i have span of 20 plus year's of experience
+          in this particular filed. and i have 40 plus expert worker's team we all are like a family.
+          journey started in 2001 and i have done many project's like 
+          hotel's interior work, shopping malls, medical hall, colth showroom interior and outside look, frames , store's and complete interior home etc... <br />
+          <div className="container  text-center">
 
-With this in mind, we've found these inspirational examples of furniture design. Some are classics that have been around for years, others are recent and more modern. <br /><br /> voluptatum, nihil voluptatibus incidunt reprehenderit! Tempore ratione doloremque repudiandae hic quidem, obcaecati esse, veritatis cumque sequi exercitationem quisquam repellendus distinctio sunt, tempora incidunt neque dolores voluptatibus consectetur? Voluptatem eius nisi cupiditate incidunt eaque sapiente totam a nemo maxime odit voluptate consectetur dolores assumenda, labore atque?  Labore natus perspiciatis pariatur at quaerat qui exercitationem, accusamus amet reiciendis praesentium eaque molestiae similique error esse nostrum expedita rem laudantium nisi aliquid? Ducimus deserunt distinctio corporis autem laborum facilis perferendis nostrum beatae, blanditiis ut dolorem quos 
-          <br /><br /> <h4>
+          <div className="col-10  col-sm-6 mx-auto ">
+
+          <ul className="text-start">
+            <li>  Cupboards</li>
+            <li>  Kitchen</li>
+            <li>  Beds</li>
+            <li>  Tv Frames</li>
+            <li>  Wood wall decoration</li>
+            
+          </ul> 
+          <button className="btn btn-dark py-0 px-2"><Link className=" bg-opacity-10 text-decoration-none m-1 btn  py-0 px-2  text-white" to="/photos">More</Link></button>
+         
+          </div>
+          </div>
+            <span className=" p-0 fs-3 text-sm-start">We have other field expert worker's too</span>
+          <div className="container  text-center">
+
+          <div className="col-10  col-sm-6 mx-auto ">
+
+          <ul className="text-start">
+            <li> Electrician</li>
+            <li>  Painter's</li>
+            <li>  Tiles</li>
+            <li>  Plumber</li>
+            
+            
+          </ul> 
+          <button className="btn btn-dark py-0 px-2"><a className=" bg-opacity-10 text-decoration-none m-1 btn  py-0 px-2  text-white" href="https://wa.me/+919550278896">More</a></button>
+         
+          </div>
+          </div>
+
+
+
+ 
+
+          <br /><span className=" fs-3">Furniture: </span>
+          Furniture is a big deal in the design industry. A well-executed concept can result in a timeless piece of furniture that never goes out of style.
+
+With this in mind, we've found these inspirational examples of furniture design. Some are classics that have been around for years, others are recent and more modern. <br /><br />  <h4>
 
           Manufacturing Process 
           </h4>
 Furniture manufacturing requires careful selection of good quality wood and proper use of the wood pieces by the craftsman. The carving and inlaying are called marquetry and is done by hand. The body of the piece must be made to check the construction and cutting. A cutting list is made, prices are calculated for various items such as consumables, fittings and ends, and processing time and appointments are estimated.
-          <br /><br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non unde, asperiores rem ratione amet nesciunt sunt sapiente hic? Vero itaque molestiae quaerat exercitationem quibusdam laborum eos, laudantium quas commodi harum? Aliquid fuga amet in aut cumque ipsam quisquam voluptates asperiores, numquam atque culpa consectetur illum nihil quibusdam delectus sit necessitatibus! Sapiente consequatur illo voluptatibus nam rem cum quod beatae eius eligendi, nisi voluptatum consequuntur odit debitis perferendis facilis dicta veritatis atque harum quia natus labore dolorum quae? Incidunt ipsam voluptatibus dolorem unde veritatis, quasi aperiam quas expedita, minus, error ullam cumque assumenda iusto pariatur quia adipisci nisi consectetur molestiae.<br /><br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perspiciatis illo a consequatur ut reiciendis neque est rerum cumque nostrum, incidunt distinctio vitae provident dolorum similique velit cupiditate quo esse quae ullam iusto repellendus ipsa in! Quisquam consequuntur laudantium laborum neque unde in eos, dolorum, soluta libero, nihil sequi minima?
+          
           </p>
         </div>
 
         {/* about z */}
         
           
-        <div id="center-box" className="container-fluid d-md-flex d-d-sm-block my-2">
+         <div className="container text-center" ><h3 className="text-decoration-underline" >More Information you  can contact me</h3></div>
+          
+        <div id="center-box" className="container-fluid d-md-flex d-sm-block my-2 border-2">
              <div className="h-center d-sm-block text-md-center mt-lg-5 mt-4">
              <h3 className="">Mohammed Zayed</h3>
              <p>Address: Banjara Hill's Road No:-12 Hyderabad <br />
@@ -55,6 +99,7 @@ Send Mail
 
              </div>
           </div>
+       
           
           <Footer/>
     </>)
