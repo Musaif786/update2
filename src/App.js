@@ -15,6 +15,7 @@ Routes,
 } from "react-router-dom";
 import Home from "./components/Home";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import AnimationHome from "./components/AnimationHome";
 
 const App = ()=> {
     return(
@@ -22,6 +23,7 @@ const App = ()=> {
         <Header/>
         <Routes>        
         <Route path="/" element={<Home/>}></Route>
+        <Route path="/animation" element={<AnimationHome/>}></Route>
         <Route path="*" element={<Home/>}></Route>
         <Route path="/home" element={<Home/>}></Route>
        <Route path="/about" element={<About/>} ></Route>

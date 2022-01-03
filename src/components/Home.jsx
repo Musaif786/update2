@@ -3,6 +3,7 @@ import "../css/home.css";
 import Footer from './Footer';
 import Topbtn from "./Topbtn";
 import { Link } from "react-router-dom";
+import AnimationHome from "./AnimationHome";
 
 
 const Home = () => {
@@ -140,6 +141,7 @@ useEffect(function(){
     <>
       <main>
       <Topbtn/>
+      <AnimationHome/>
       
         <div className="container-fluid">
           <div className="left">
