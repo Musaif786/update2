@@ -10,6 +10,7 @@ const Header = ()=>{
   //   color:"white",
   //   backgroundColor :"black",
   // });
+  
   const[text1 ,setText1]= useState("Dark");
   const[colors ,setColor]= useState({
     backgroundColor:"white",
@@ -21,21 +22,18 @@ const Header = ()=>{
   
    
    const btnsss = document.getElementById('darkbtn');
-   let testing = document.getElementById("testing");
-   let abc;
+   const darkbtnmoon = document.getElementById("darkbtnmoon");
+ 
   const darkmode2 =()=>{
     btnsss.addEventListener("click",function(){
-      if(colors.color=="white"){
+      btnsss.style.display ="none";
+      
+      darkbtnmoon.style.display ="block";
+    });
 
-        setText1("White");
-        
-        
-      }else{
-       
-
-          setText1("Dark");
-        
-      }
+    darkbtnmoon.addEventListener("click",function(){
+      btnsss.style.display ="block";
+      darkbtnmoon.style.display ="none";
     })
       
     }
@@ -134,7 +132,9 @@ const Header = ()=>{
         </li>
         <div id="h-btn-div">
 
-        <button id="darkbtn"   onClick={darkmode1} className="btn-sm btn-outline-primary text-center m-0"><i class="fa fa-sun-o" aria-hidden="true"> {text1}</i>
+        <button id="darkbtn" title="Unable Dark Mood"   onClick={darkmode1} className="btn-sm btn-outline-primary text-center m-0"><i class="fa fa-sun-o" aria-hidden="true"> LM</i>
+</button>
+<button id="darkbtnmoon"  title="Unable Light Mood"  onClick={darkmode1} className="btn-sm btn-outline-primary text-center m-0 "><i class="fa fa-moon-o" aria-hidden="true"> DM</i>
 </button>
         </div>
         
