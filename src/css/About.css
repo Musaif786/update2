@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+progress{
+    font-size: 40px;
+    display: none;
+}
+#about{
+
+font-size: 18px;
+letter-spacing: 1px;
+font-family: 'Poppins', sans-serif;
+}
+#about.darkmode{
+    color: white;
+}

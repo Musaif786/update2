@@ -1,27 +1,68 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Home from "./Home";
 
 
 
 const Header = ()=>{
-    var w = window.innerWidth;
+  //darkmode new mthod harry bhai
+  // const[mystyle, setMystyle] = useState({
+  //   color:"white",
+  //   backgroundColor :"black",
+  // });
+  const[text ,setText]= useState("dark");
 
-    //DarkMode button
-    const darkmode1 = ()=>{
-        var body = document.querySelector('body');
-        var darkbtn= document.getElementById('darkbtn');
-        var card = document.querySelector('.card');
-        var h1= document.querySelector('h1');
-        var dflex= document.getElementById('d-flex');
+  useEffect(()=>{
+
+  
+  const darkmode2 =()=>{
+    const body = document.querySelector("body");
+    if(body.style.backgroundColor=="black"){
+      
+      setText("hello");
+      }else{
+        setText("no");
+        
+      }
+    }
+    darkmode2();
+  })
+  
+
+    // var w = window.innerWidth;
+    // // const [ text, setText ]= useState({
+    // //   backgroundColor: "red",
+    // //   color:"white",
+    // // });
+   
+
+     //DarkMode button my old method
+     const darkmode1 = ()=>{
+         var body = document.querySelector('body');
+         var testing= document.querySelector('#testing');
+         var about =  document.getElementById('about');
+         var card = document.querySelector('.card');
+         var h1= document.querySelector('h1');
+         var dflex= document.getElementById('d-flex');
         var header = document.querySelector('header');
         h1.classList.toggle('darkmode'); 
-        body.classList.toggle('darkmode');
-        header.classList.toggle('darkmode');
-        card.classList.toggle('darkmode');
-        // body.style.backgroundColor = "black";
+         body.classList.toggle('darkmode');
+       header.classList.toggle('darkmode');
+         card.classList.toggle('darkmode');
+         about.classList.toggle('darkmode');
+          body.style.backgroundColor = "black";
+          let a=0;
+          testing.innerHTML ="";
+          if(a==0){
+
+            testing.innerHTML ="black";
+          }else{
+            testing.innerHTML ="white";
+          }
+
+        
       
-    }
+     }
 
 //     var htoggle =()=>{
 //     var ul = document.querySelector("ul");
@@ -51,13 +92,13 @@ const Header = ()=>{
         </header> */}
 
         {/* header css in index.css */}
-     <header>
-
+     <header >
+ <div id="testing"></div>
      
         <nav className="navbar navbar-expand-lg navbar-light ">
   <div className="container-fluid mx-2">
     <Link className="navbar-brand text-white" to="/home">ZFWORK-INTERIOR-DESIGN</Link>
-    <button className="navbar-toggler btn bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="h-toggle-btn" className="navbar-toggler btn bg-white btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -78,7 +119,7 @@ const Header = ()=>{
         
       </ul>
       <ul className="d-flex">
-       <button id="darkbtn" onClick={darkmode1} className="btn-sm btn-outline-primary text-center"><i class="fa fa-sun-o" aria-hidden="true">  Dark-mode</i>
+       <button  onClick={darkmode1} className="btn-sm btn-outline-primary text-center"><i id="darkbtn" class="fa fa-sun-o" aria-hidden="true"> Dark-mode</i>
 </button>
       </ul>
     </div>

@@ -276,6 +276,7 @@ Send Mail
         {/* home 4th part projects  and video*/}
  <hr />
         <div className="container mt-3"> 
+        {/* insede bars */}
          <div className="row text-center ">
          <h1 className="text-center mb-5">Projects</h1>
          <div className="col-4">

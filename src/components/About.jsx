@@ -1,22 +1,57 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Animation from "./Animation";
 import Footer from "./Footer";
 import PhotosBox from "./PhotosBox";
 import Slider from "./Slider";
 import { Link } from "react-router-dom";
+import "../css/About.css";
+import Marquee from "./Marquee";
+import Topbtn from "./Topbtn";
 const About= ()=>{
+
+//counting in 4th part
+useEffect(()=>{
+
+ 
+  const counting =document.querySelectorAll('#counting');
+const speed = 100;
+counting.forEach(function(e){
+    function update(){
+       const target = +e.getAttribute("data-val");
+      const count = +e.innerHTML;
+      const incress = target / speed;
+       
+      if(count < target){
+        e.innerHTML = Math.ceil( count+incress);
+        setTimeout(update,100);
+      }else{
+        e.innerHTML = target;
+      }
+      
+       //  alert(target);
+    }
+    update();
+});   
+
+});
+
+
   const img1 = "./images/zayed.jpg" ;
     return(<>
         {/* <h2>im About page</h2> */}
         {/* <Animation/> */}
         {/* <PhotosBox/> */}
         <Slider name='About-us' />
+        <Marquee/>
+        <Topbtn/>
 
         {/* text */}
-        <div className="container mb-3">
+        <hr />
+        <div id="about" className="container mb-3">
+        <progress></progress>
         <h1 className="text-center">About Us.</h1>
           <p className="my-2 text-center">  
-          Myself <span> Mohammed Zayed </span>and i'm a professional  furniture designer interior to all type's of wood works, and i have span of 20 plus year's of experience
+          Myself <span> Mohammed Zayed </span>and i'm a professional  furniture interior designer. we do all type's of wood works, and i have span of 20 plus year's of experience
           in this particular filed. and i have 40 plus expert worker's team we all are like a family.
           journey started in 2001 and i have done many project's like 
           hotel's interior work, shopping malls, medical hall, colth showroom interior and outside look, frames , store's and complete interior home etc... <br />
@@ -55,10 +90,38 @@ const About= ()=>{
           </div>
 
 
+          {/* progre */}
+          <hr />
+          <div className="row text-center mt-3 ">
+         <h1 className="text-center mb-5 mt-4">Projects</h1>
+         <div className="col-4">
+             <div id="h-4-bar"><div></div></div>
+             <div className="mt-2" id="counting" data-val="10">0</div>
+          <p className="mt-3">Running Project's.</p>
+          </div>
+          
+          <div className="col-4">
+             <div id="h-4-bar2"><div></div></div>
+             <div className="mt-2" id="counting" data-val="40">0</div>
+          <p className="mt-3">Fourty plus Expert Worker's.</p>
+          </div>
+          
+          <div className="col-4">
+             <div id="h-4-bar3"><div></div></div>
+             <div className="mt-2" id="counting" data-val="385">0</div>
+          <p className="mt-3">Successful Project's.</p>
+          </div>
+          
+          <p className=" mt-3"> <h5 className=" mb-3"><strong> About Projects</strong></h5>
+Computer table, chairs,tables, beds, kitchen words, cupboards,tvsets  and cabinets. fence furniture is used daily in homes, workplaces and public buildings. We present an enclosure furniture set consisting of four chairs and a furniture made of wood and various other materials all  types of playwoods and lamination as per the customer requirnment. Click below link to know more..
+         
+         <button className="btn btn-dark text-white p-0"><Link className="px-4 bg-opacity-10 text-decoration-none m-1 btn text-white py-0 px-4 bg-transparent" to="/photos">Enroll</Link></button>
+         </p>
 
+         </div>
  
 
-          <br /><span className=" fs-3">Furniture: </span>
+          <br />
           Furniture is a big deal in the design industry. A well-executed concept can result in a timeless piece of furniture that never goes out of style.
 
 With this in mind, we've found these inspirational examples of furniture design. Some are classics that have been around for years, others are recent and more modern. <br /><br />  <h4>
