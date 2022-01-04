@@ -10,20 +10,34 @@ const Header = ()=>{
   //   color:"white",
   //   backgroundColor :"black",
   // });
-  const[text ,setText]= useState("dark");
+  const[text1 ,setText1]= useState("Dark");
+  const[colors ,setColor]= useState({
+    backgroundColor:"white",
+    color:"white",
+  });
 
   useEffect(()=>{
-
+   
   
+   
+   const btnsss = document.getElementById('darkbtn');
+   let testing = document.getElementById("testing");
+   let abc;
   const darkmode2 =()=>{
-    const body = document.querySelector("body");
-    if(body.style.backgroundColor=="black"){
-      
-      setText("hello");
+    btnsss.addEventListener("click",function(){
+      if(colors.color=="white"){
+
+        setText1("White");
+        
+        
       }else{
-        setText("no");
+       
+
+          setText1("Dark");
         
       }
+    })
+      
     }
     darkmode2();
   })
@@ -93,7 +107,7 @@ const Header = ()=>{
 
         {/* header css in index.css */}
      <header >
- <div id="testing"></div>
+ <div style={colors} id="testing"></div>
      
         <nav className="navbar navbar-expand-lg navbar-light ">
   <div className="container-fluid mx-2">
@@ -102,7 +116,7 @@ const Header = ()=>{
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="ul navbar-nav  me-1 mb-2 mb-lg-0 float-lg-end d-lg-flex  d-flex justify-content-lg-end  ">
+      <ul className="ul navbar-nav  me-1 mb-2 mb-lg-0 float-lg-end d-lg-flex  d-flex justify-content-between m-2 ">
         <li className="nav-item">
           <Link className="nav-link text-white active" aria-current="page" to="/home">Home</Link>
         </li>
@@ -112,18 +126,29 @@ const Header = ()=>{
         <li className="nav-item">
           <Link className="nav-link text-white" to="/photos">Gallery</Link>
         </li>
+        <li  className="nav-item">
+          <Link className="nav-link text-white" to="/product">Products</Link>
+        </li>
         <li className="nav-item">
           <Link className="nav-link text-white" to="/contact">Contact_Us</Link>
         </li>
-        
-        
-      </ul>
-      <ul className="d-flex">
-       <button  onClick={darkmode1} className="btn-sm btn-outline-primary text-center"><i id="darkbtn" class="fa fa-sun-o" aria-hidden="true"> Dark-mode</i>
+        <div id="h-btn-div">
+
+        <button id="darkbtn"   onClick={darkmode1} className="btn-sm btn-outline-primary text-center m-0"><i class="fa fa-sun-o" aria-hidden="true"> {text1}</i>
 </button>
+        </div>
+        
+        
       </ul>
-    </div>
+      
+
+      {/* <ul id="h-btn" className="ml-0 bg-success">
+       <button   onClick={darkmode1} className="btn-sm btn-outline-primary text-center m-0"><i id="darkbtn" class="fa fa-sun-o" aria-hidden="true">Dark</i>
+</button>
+      </ul> */}
   </div>
+      </div>
+  
 </nav>
 
 </header>

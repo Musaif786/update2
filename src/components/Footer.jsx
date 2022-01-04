@@ -5,7 +5,7 @@ const Footer = ()=>{
     let year = 2021;
     return(
         <> <footer> 
-        <h2 className="footer-h2"><i class="fa fa-copyright" aria-hidden="true"></i> {year} Musaif</h2>
+        <h2 className="footer-h2"><i class="fa fa-copyright" aria-hidden="true"></i> {year} <a className="text-dark text-decoration-none" href="https://wa.me/+917995587687"> Musaif </a></h2>
 
         <div className="container-fluid bg-info">
             <div className="col-6 col-xl-3 mx-auto  p-0 ">

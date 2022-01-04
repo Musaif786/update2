@@ -38,16 +38,33 @@ body.darkmode{
 header{
   position: relative;
   /* overflow-y: scroll; */
-  max-width: 900px;
+  max-width: 920px;
   background-color: #b1bfd8;
 background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
   
   margin: 0px auto;
   border-radius: 10px;
   font-weight: 500;
+  overflow: hidden;
   
   
 }
+#h-btn-div{
+  position: relative;
+  left: 0px;
+  width: 100%;
+  height: auto;
+}
+#darkbtn{
+  position: relative;
+  left:0%;
+  
+}
+/* #h-btn{
+  position: absolute;
+  top: 0px;
+  left: 50%;
+} */
 #h-toggle-btn{
   font-size: 10px;
   background-color: red;

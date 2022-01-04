@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Photos from "./components/Photos";
+import Animation from "./components/Animation";
 //import Animation from "./components/Animation";
 
 import "./index.css";
@@ -29,6 +30,7 @@ const App = ()=> {
        <Route path="/about" element={<About/>} ></Route>
        <Route path="/photos" element={<Photos/>} ></Route>
        <Route path="/contact" element={<Contact/>} ></Route>
+       <Route path="/product" element={<Animation/>} ></Route>
       
       
        </Routes>
