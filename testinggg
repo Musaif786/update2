@@ -1,0 +1,30 @@
+var num=0;
+var box =document.querySelectorAll("center-box");
+var PBNext =()=>{
+   
+     num++;
+     for(let i=0; i<box.length;i++){
+          box[i].style.display="none";
+     }
+     if(num>=box.length){
+          num=0;
+      }
+     
+      box[num].style.display = "block";
+  
+
+}
+
+function PBBack(){
+     num--;
+     for(let i=box.length-1; i>=0; i--){
+box[i].style.display ="none";
+     }
+     if(num <0){
+        num=box.length-1;
+     }
+
+     box[num].style.display = "block";
+ }
+
+ 

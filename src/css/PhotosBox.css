@@ -4,7 +4,11 @@
     height: auto;
     width: 100vw;
     font-family: 'EB Garamond', serif;
+    display: none;
 
+}
+#p-b-first{
+    display: block;
 }
 .PhotosBox .center-box{
     display: flex;
@@ -69,7 +73,7 @@
     align-items: center;
     background-color: #7f5a83;
     background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-    z-index: 2;
+    z-index: 1000;
     padding: 10px;
     border-radius: 15px 15px 15px 0px;
     
@@ -95,4 +99,54 @@
     padding:0px 5px;
     background-color: transparent;
     border: none;
+}
+/* .center-box{
+ display: none;   
+} */
+
+.p-btn-box{
+    background-color: red;
+    margin:2px auto;
+    position: relative;
+   
+
+}
+.p-btn-box-center{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+    align-items: center;
+    background: transparent;
+}
+.p-btn-box-center button{
+    height: 100px;
+    border: none;
+    
+    font-size: 20px;
+    font-weight: lighter;
+    padding:5px 15px;
+    background-color: transparent;
+    margin: 5px;
+    margin: 5px 5%;
+    background-color: aliceblue;
+    
+}
+.p-btn-box-center button:hover{
+    width: 60px;
+}
+.p-btn-box-center button:nth-child(1){
+
+    position: absolute;
+    bottom: 50%;
+    
+    left: 40px;
+    background: transparent;
+}
+.p-btn-box-center button:nth-child(2){
+    position: absolute;
+    bottom: 50%;
+    background: transparent;
+    
+    right: 40px;
 }

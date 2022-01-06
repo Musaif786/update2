@@ -8,5 +8,79 @@ marquee{
     
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
-    
 }
+/*
+ #marquee-box{
+    display: flex;
+    align-items: flex-start;
+    margin: 0px;
+    padding: 0%;
+    flex-direction: row;
+}  */
+
+
+    
+/*
+#marquee-box{
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "img1 img1 img1 img2 img5 img5 img8 img9 img9 img12"
+    "img3 img3 img3 img2 img6 img6 img8 img10 img10 img12"
+    "img4 img4 img4 img4 img7 img7 img11 img11 img11 img12";
+    grid-gap: 0px;
+    margin: 0px;
+    height: 200px;
+    width: auto;
+}
+.m-1{
+    background-color: red;
+    grid-area: img1;
+}
+.m-2{
+    background-color: green;
+    grid-area: img2;
+}
+.m-3{
+    background-color: pink;
+    grid-area: img3;
+}
+.m-4{
+    background-color: blue;
+    grid-area: img4;
+}
+.m-5{
+    background-color: rgb(0, 247, 255);
+    grid-area: img5;
+}
+.m-6{
+    background-color: rgba(70, 102, 10, 0.746);
+    grid-area: img6;
+}
+.m-7{
+    background-color: rgb(246, 222, 6);
+    grid-area: img7;
+}
+.m-8{
+    background-color: rgb(81, 255, 0);
+    grid-area: img8;
+}
+.m-9{
+    background-color: rgb(81, 255, 0);
+    grid-area: img9;
+}
+.m-10{
+    background-color: rgb(81, 255, 0);
+    grid-area: img10;
+}
+.m-11{
+    background-color: rgb(15, 123, 211);
+    grid-area: img11;
+}
+.m-12{
+    background-color: rgb(81, 255, 0);
+    grid-area: img12;
+} 
+*/

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Box</title>
+    <style>
+        .container{
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .pagebox{
+            min-height: 300px;
+            width: 400px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box{
+            min-height: 150px;
+            max-width: 250px;
+            background-color: rgb(255, 255, 255);
+            margin: 5px;
+            display: none;
+            /* overflow-y: scroll; */
+            transition: 2s;
+        }
+        .box:nth-child(1){
+            background: rgba(222, 245, 16, 0.87);
+            display: block;
+            
+        }
+        .box:nth-child(2){
+        
+            display: none;
+        }
+        .box:nth-child(3){
+        
+            display: none;
+        }
+        button{
+            margin: 5px;
+            padding:5px 20px;
+            background-color: rgb(0, 110, 255);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <div class="pagebox"> 
+
+      <div class="box">im one
+          Lloremfa-rotate-180 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, odit?
+      </div>
+      <div class="box">im oness
+        Lloremfa-rotate-180 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, odit?
+    </div>
+    <div class="box">im oness
+        Lloremfa-rotate-180 Loresm ipsum dolor sit amet consectetur adipisicing elit. Ipsum, odit?
+    </div>
+    <div class="box">im onesss
+        Lloremfa-rotate-180 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, odit?
+    </div>
+    
+    
+
+      <div class="box">im two
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit sus
+      </div>
+      <div class="box">im three Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate repellat repellendus magnam dolorum labore libero.</div>
+      
+  </div>
+  <button onclick="back()" >back</button>
+  <button onclick="next()" >Next</button>
+</div>   
+
+<script>
+    let num = 0;
+    let boxs = document.getElementsByClassName('box');
+     console.log(boxs);
+     function next(){
+            num++;
+            for(let i=0; i<boxs.length; i++ ){
+                boxs[i].style.display = "none";
+                
+                //just extra masala that all nothing else this below code
+                boxs[i].style.transition = "2s"
+                boxs[0].style.transform = "rotate(30deg)";
+                boxs[1].style.transform = "rotate(60deg)";
+                boxs[2].style.transform = "rotate(90deg)";
+                boxs[3].style.transform = "rotate(145deg)";
+                boxs[4].style.transform = "rotate(180deg)";
+                boxs[5].style.transform = "rotate(360deg)";
+                // till here
+                
+            
+            }
+            if(num>=boxs.length){
+                num=0;
+            }
+           
+            boxs[num].style.display = "block";
+        
+        
+     }
+
+     function back(){
+         num--;
+         for(let i=boxs.length-1; i>=0; i--){
+ boxs[i].style.display ="none";
+         }
+         if(num <0){
+            num=boxs.length-1;
+         }
+
+         boxs[num].style.display = "block";
+     }
+
+
+</script>
+</body>
+</html>
