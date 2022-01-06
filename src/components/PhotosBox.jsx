@@ -91,14 +91,14 @@ box[i].style.display ="none";
         
          {/* c1 */}
 
-         <div data-aos="fade-right" className="photos-container">
+         <div  className="photos-container">
              <h2>cupboard</h2>
              <img id="g-imgs-list" onClick={imglistclick} src="./images/cupboard1.jpeg " alt="" />
              <h1>date: 29/wed/2021</h1>
              <button onClick={btns} id="btn1" className="btn btn-dark px-4 my-2">More</button>
              <div id="btn-box">
              <p id="p1">We design furniture and related products for industrial, commercial and domestic clients balancing innovation, aesthetic appeal and functionality.we create designs for mass-produced as well as handcrafted furniture products. They must consider the function of an item of furniture, the way it looks and the limitations of the material that it is made from...
-             <a className="text-primary text-decoration-none" href="https://m.facebook.com/mohd.zayed.121?fref=nf"> <button className="btn btn-outline-primary p-0 px-3 text-primary">More</button> </a><br />
+             <a className="text-primary text-decoration-none" href="https://m.facebook.com/mohd.zayed.121?fref=nf"> <button className="btn btn-outline-primary p-0 px-3 text-dark">More</button> </a><br />
               
              </p>
              <button id="btn1" onClick={btns} className="cancel-btn">
