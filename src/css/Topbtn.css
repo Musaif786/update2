@@ -1,15 +1,21 @@
 .Topbtn{
     position: fixed;
-    bottom: 60px;
+    bottom: 80px;
     right: 30px;
     z-index: 100;
 display: none;
     
+}
+.Topbtn::after{
+    content: "Top";
+    display: flex;
+    padding: 0%;
+    margin: 0%;
 }
 /* .Topbtn.topbtntoggle{
     display: block;
 } */
 .Topbtn a{
     font-size: 20px;
-    color: red;
+    color: black;
 }

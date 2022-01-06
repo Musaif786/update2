@@ -57,7 +57,7 @@ const AnimationHome = () =>{
            {/* 2nd animation */}
 
            <div className="A-two row">
-         <div className="a-plane"> <h1><i class="fa fa-fighter-jet" aria-hidden="true"></i>
+         <div className="a-plane"><h1 className="text-white"><i class="fa fa-fighter-jet" aria-hidden="true"></i>
 </h1> </div>
            </div>
       </div>
