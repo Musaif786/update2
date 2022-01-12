@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import "../css/About.css";
 import Marquee from "./Marquee";
 import Topbtn from "./Topbtn";
+import AnimaNames from "./AnimaNames";
 const About= ()=>{
 
 //counting in 4th part
@@ -42,6 +43,7 @@ counting.forEach(function(e){
         {/* <Animation/> */}
         {/* <PhotosBox/> */}
         <Slider name='About-us' />
+        <AnimaNames/>
         <Marquee/>
         <Topbtn/>
 

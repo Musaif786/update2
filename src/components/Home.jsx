@@ -141,9 +141,9 @@ useEffect(function(){
     <>
       <main>
       <Topbtn/>
-      <AnimationHome/>
+      {/* <AnimationHome/> */}
       
-        <div className="container-fluid">
+        <div className="container-fluid ">
           <div className="left">
               <div className="row">
               <div id="main-div" className="col-10 text-center d-flex mt-3">
