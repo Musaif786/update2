@@ -64,7 +64,7 @@ const Slider= (props)=>{
     return(<>
         <div  id="d-flex" className="container-fluid d-flex carousel slide carousel-fade "   data-bs-ride="carousel">
         <h1 className="mb-2">{props.collections} {props.name}</h1>
-           <div >
+           <div id="slidermainbox" >
                <img id="slider" src="./images/kitchen5.jpeg " alt="" />
            </div>
            <div className="btns mt-0">

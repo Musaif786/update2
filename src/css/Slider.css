@@ -12,8 +12,46 @@ body{
  
  
  flex-direction: column;
+ position: relative;
+ overflow: hidden;
  
 }
+/* background design below code */
+
+#d-flex::after{
+    position: absolute;
+    content: "";
+    background-color: #c2c2c2c9;
+background-image: linear-gradient(315deg, #52a6ce 0%, 315deg, #816f6fdc 74%);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    transform: translate(290px,105px);
+    z-index: 0;
+  }
+  #d-flex::before{
+    position: absolute;
+    content: "";background-color: #f1dfd1;
+    background-image: linear-gradient(315deg, #d6d6d6c9 0%, #f6f0ea 74%);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transform: translate(-290px,-180px);
+    z-index: 0;
+  }
+  @media only screen and (max-width: 600px) {
+    #d-flex::after{
+      height: 250px;
+      width: 250px;
+      transform: translate(160px,100px);
+    }
+    #d-flex::before{
+      height: 200px;
+      width: 200px;
+      transform: translate(-210px,-200px);
+    }
+  }
+/* end background design */
 #d-flex h1{
  color: rgb(0, 0, 0);
  text-align: center;
@@ -25,10 +63,15 @@ body{
  line-height: 40px;
  border: 1px solid black;
  box-shadow: 2px 2px 5px black;
+ z-index: 10;
 }
 #d-flex h1.darkmode{
     color: white;
     border: 1px solid white;
+    z-index: 10;
+}
+#d-flex #slidermainbox{
+    z-index: 10;
 }
 #d-flex #slider{
     height: 260px;
@@ -38,6 +81,7 @@ body{
     animation: anima1 3s linear ;
     margin: 5px 0px;
     overflow: hidden;
+    z-index: 10;
 }
 #d-flex img{
     overflow: hidden;
@@ -51,22 +95,25 @@ body{
     box-shadow: 0px 0px 3px black;
     border-radius: 10px;
     transition: 3s;
+    z-index: 10;
     /* transform: scale(1); */
 }
 @keyframes anima1 {
     0%{
-        opacity: 0.2;
+        opacity: 0.8;
+        transform: rotate(180deg);
         /* transform: scale(0.5); */
     }
     
     100%{
         /* transform: scale(0.5); */
-        opacity: 0.9;
+        opacity: 1;
+        transform: rotate(0deg);
     }
 }
 .btns
 {
-
+  z-index: 10;
     height: 50px;
     min-width: 80%;
     display: flex;
