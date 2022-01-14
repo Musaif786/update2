@@ -55,10 +55,10 @@ const Form= ()=>{
  
  <form method="POST"  onSubmit={submitdata}> 
    <label htmlFor="name"> Username: </label>
-     <input type="text" placeholder="fullname" name="fname" id="name" onChange={onchange} value={user.fname} />
+     <input type="text" placeholder="fullname" name="fname" id="name" onChange={onchange} value={user.fname} required />
     
-    <label htmlFor="email">Gmail:</label>
-     <input type="email" name="comnt" id="email" placeholder="example: email@gmail.com" onChange={onchange} value={user.comnt} />
+    <label htmlFor="email">Contact</label>
+     <input type="text" name="comnt" id="email" placeholder="email or phone number" onChange={onchange} value={user.comnt} required />
 
    <label htmlFor="feedback">Feedback</label>
      <textarea name="feedback" id="" cols="30" value={user.feedback} onChange={onchange} placeholder="your text here" rows="4"></textarea>
