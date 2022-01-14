@@ -57,7 +57,7 @@ const Form= ()=>{
    <label htmlFor="name"> Username: </label>
      <input type="text" placeholder="fullname" name="fname" id="name" onChange={onchange} value={user.fname} required />
     
-    <label htmlFor="email">Contact</label>
+    <label htmlFor="email">Contact </label>
      <input type="text" name="comnt" id="email" placeholder="email or phone number" onChange={onchange} value={user.comnt} required />
 
    <label htmlFor="feedback">Feedback</label>

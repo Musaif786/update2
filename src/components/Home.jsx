@@ -4,6 +4,8 @@ import Footer from './Footer';
 import Topbtn from "./Topbtn";
 import { Link } from "react-router-dom";
 import AnimationHome from "./AnimationHome";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 const Home = () => {
@@ -169,7 +171,7 @@ useEffect(function(){
       <hr />
 
       {/* box below the 1st zayed box */}
-          <div id="center-box" className="container-fluid d-md-flex d-d-sm-block my-2">
+          <div  id="center-box"  className="container-fluid d-md-flex d-d-sm-block my-2">
              <div className="h-center d-sm-block text-md-center mt-lg-5 mt-4">
              <h3 className="">Mohammed Zayed</h3>
              <p>Address: Banjara Hill's Road No:-12 Hyderabad <br />
@@ -196,7 +198,7 @@ Send Mail
               
         {/* 2nd box amer box */}
          
-        <div id="center-box" className="container-fluid d-md-flex d-d-sm-block my-2">
+        <div id="center-box"   className="container-fluid d-md-flex d-d-sm-block my-2">
              <div className="h-center d-sm-block text-md-center mt-lg-5 ">
              <h3>Amar Gupta</h3>
              <p> Address: Banjara Hill's Road No:-12 Hyderabad </p>
@@ -222,9 +224,9 @@ Send Mail
         {/* card rows */}
        
          {/* card rows */}
-         <div className="row">
+         <div  className="row">
           <div className="col-10 col-xl-4 m-auto">
-        <div className="card text-black" > 
+        <div  className="card text-black" > 
         <img id="card-img" src="./images/zayed.jpg" class="card-img-top" alt="img"/>
           <div class="card-body">
     <h5 class="card-title">Mohammed Zayed</h5>
