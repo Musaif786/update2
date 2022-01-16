@@ -56,8 +56,17 @@ background-color: black;
     border-radius: 0px 10px 10px 10px;
     font-family: roboto;
     position: relative;
+    min-width: 80%;
+    width: 50%;
 }
-
+@media only screen and (max-width: 600px) {
+    #commentsbox-content{
+        position: relative;
+        width: 50%;
+        background-color: rgb(156, 176, 200);
+        margin: auto;
+    }
+}
 #commentsbox-content h4{
     color: black;
 }

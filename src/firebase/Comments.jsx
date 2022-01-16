@@ -27,9 +27,9 @@ export const Comments = () => {
                   <div className="box" scope="row">{}</div>
                   <>Sno: {index +1}</>
                       
-                <div id="commentsbox" className="container mx-auto" style={{minHeight:"70px", maxWidth:"90%"}}>
-                <div className="comment-profile">{data[id].name.charAt(0) }</div>
-                <div id="commentsbox-content" className=" mx-auto" style={{minHeight:"100%",minWidth:"70%", maxWidth:"40%"}}>
+                <div id="commentsbox" className="container mx-lg-auto" style={{ }}>
+                <div className="comment-profile text-black">{data[id].name.charAt(0) }</div>
+                <div id="commentsbox-content" className=" mx-auto" style={{minHeight:"100%",minWidth:"70%", maxWidth:"100%"}}>
                  <div className="comment-arrow"></div>
                  <h4 className="mt-2 fs-4 "><span>User </span>: {data[id].name}</h4>
                  <p><span>Comments </span></p>
