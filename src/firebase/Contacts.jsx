@@ -29,7 +29,7 @@ const Contacts = () => {
    if(!name || !email || !contact){
        toast.error("plzz provide value in each input field")
    }else{
-       fireDb.child("contact").push(state, (err)=>{
+       fireDb.child("zfwork").push(state, (err)=>{
            if(err){
                toast.error(err);
            }else{

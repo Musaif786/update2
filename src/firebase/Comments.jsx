@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const Comments = () => {
   const [data, setData] = useState({});
   useEffect(() => {
-    fireDb.child("contact").on("value", (snapshot) => {
+    fireDb.child("zfwork").on("value", (snapshot) => {
       if (snapshot.val() !== null) {
         setData({ ...snapshot.val() });
       } else {
