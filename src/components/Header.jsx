@@ -51,6 +51,8 @@ const Header = ()=>{
      //DarkMode button my old method
      const darkmode1 = ()=>{
          var body = document.querySelector('body');
+         var commentsbox = document.getElementById("commentsbox");
+         var form = document.getElementById('forms');
          var testing= document.querySelector('#testing');
          var about =  document.getElementById('about');
          var card = document.querySelector('.card');
@@ -62,6 +64,9 @@ const Header = ()=>{
        header.classList.toggle('darkmode');
          card.classList.toggle('darkmode');
          about.classList.toggle('darkmode');
+         form.classList.toggle('darkmode');
+         commentsbox.classList.toggle('darkmode');
+
           body.style.backgroundColor = "black";
           let a=0;
           testing.innerHTML ="";

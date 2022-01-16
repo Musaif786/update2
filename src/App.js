@@ -6,7 +6,8 @@ import Contact from "./components/Contact";
 import Photos from "./components/Photos";
 import Animation from "./components/Animation";
 //import Animation from "./components/Animation";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./index.css";
 import "./utilits.css";
 
@@ -17,11 +18,13 @@ Routes,
 import Home from "./components/Home";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import AnimationHome from "./components/AnimationHome";
+import AllContacts from "./components/AllContacts";
 
 const App = ()=> {
     return(
         <> 
         <Header/>
+        <ToastContainer position='top-center'/>
         <Routes>        
         <Route path="/" element={<Home/>}></Route>
         <Route path="/animation" element={<AnimationHome/>}></Route>
@@ -29,7 +32,7 @@ const App = ()=> {
         <Route path="/home" element={<Home/>}></Route>
        <Route path="/about" element={<About/>} ></Route>
        <Route path="/photos" element={<Photos/>} ></Route>
-       <Route path="/contact" element={<Contact/>} ></Route>
+       <Route path="/contact" element={<AllContacts/>} ></Route>
        <Route path="/product" element={<Animation/>} ></Route>
       
       
