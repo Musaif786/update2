@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import AnimationHome from "./AnimationHome";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Loader from "./Loader";
 
 
 const Home = () => {
@@ -142,6 +143,7 @@ useEffect(function(){
   return (
     <>
       <main>
+      <Loader/>
       <Topbtn/>
       {/* <AnimationHome/> */}
       

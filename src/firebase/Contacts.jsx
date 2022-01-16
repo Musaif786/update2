@@ -50,7 +50,7 @@ const Contacts = () => {
   <input type="email" name="email" id="email" placeholder='email' value={email} onChange={handleinput} />
       
   <label htmlFor="contact">contact</label>
-  <input type="number" name="contact" id="contact" placeholder='contact' value={contact} onChange={handleinput} />
+  <input type="number" name="contact" id="contact" placeholder='contact no' value={contact} onChange={handleinput} />
 
   <label htmlFor="comment">Comment</label>
   <textarea cols="40" rows="5" type="text" name="comment" id="comment" placeholder='comment here...' value={comment} onChange={handleinput} />
