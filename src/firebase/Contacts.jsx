@@ -8,7 +8,8 @@ const initialstate = {
     name:"",
     email:"",
     contact:"",
-    comment:""
+    comment:"",
+    date:"",
 }
 
 
@@ -16,7 +17,7 @@ const Contacts = () => {
     const [state,  setState]= useState(initialstate);
     const [data, setData] = useState({});
 
-    const {name,email,contact,comment}= state;
+    const {name,email,contact,comment,date}= state;
 
     const history = useNavigate();
     const handleinput = (e)=>{
@@ -26,7 +27,7 @@ const Contacts = () => {
     }
     const handlesubmit = (e)=>{
    e.preventDefault();
-   if(!name || !email || !contact){
+   if(!name || !email || !contact || !comment ||! date){
        toast.error("plzz provide value in each input field")
    }else{
        fireDb.child("zfwork").push(state, (err)=>{
@@ -46,15 +47,16 @@ const Contacts = () => {
   <label htmlFor="name">Name</label>
   <input type="text" name="name" id="name" placeholder='fullname' value={name} onChange={handleinput} />
       
-  <label htmlFor="email">Email</label>
-  <input type="email" name="email" id="email" placeholder='email' value={email} onChange={handleinput} />
+  {/* <label htmlFor="email">Email</label>
+  <input type="email" name="email" id="email" placeholder='email' value={email} onChange={handleinput} /> */}
       
   <label htmlFor="contact">contact</label>
   <input type="number" name="contact" id="contact" placeholder='contact no' value={contact} onChange={handleinput} />
 
+  <label htmlFor="comment">Date</label>
+   <input type="date" name="date"  placeholder='date' value={date} onChange={handleinput}  />
   <label htmlFor="comment">Comment</label>
   <textarea cols="40" rows="5" type="text" name="comment" id="comment" placeholder='comment here...' value={comment} onChange={handleinput} />
-
       <input type="submit" value="Submit"/>
             </form>
         </div>

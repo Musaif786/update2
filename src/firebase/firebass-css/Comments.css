@@ -22,7 +22,7 @@ filter: blur(.2px);
 
 }
 .comment-arrow{
-    position: absolute;
+    /* position: absolute;
     left: -8px;
     top: 8px;
     z-index: -999;
@@ -31,7 +31,17 @@ filter: blur(.2px);
     height: 50px;
     width: 50px;
     background-color: rgb(170, 152, 152);
-    transform: rotate(45deg);
+    transform: rotate(45deg); */
+    position: absolute;
+    height: 30px;
+        width: 30px;
+        left: -15px;
+        top: 15px;
+        background-color: transparent;
+        border-bottom: 2px solid rgb(182, 129, 129);
+        border-left: 2px solid rgb(219, 156, 156);
+        transform: rotate(45deg);
+
 }
 .comment-profile{
     position: absolute;
@@ -54,7 +64,7 @@ background-color: black;
 #commentsbox-content{
     height: 100%;
     background-color: #ddfaff;
-    background-color: #fff;
+    background-color: rgba(156, 176, 200, 0.822);
     border: 1px solid black;
     padding: 5px 12px;
     border-radius: 0px 10px 10px 10px;
@@ -64,23 +74,32 @@ background-color: black;
     width: 50%;
 
 }
+
 @media only screen and (max-width: 600px) {
     #commentsbox-content{
         position: relative;
         width: 85%;
-        background-color: rgb(156, 176, 200);
+        background-color: rgba(156, 176, 200, 0.822);
         margin: auto;
         transform: translate(40px);
         z-index: 10000;
 
     }
-
+    .comment-profile{
+        margin-right: 1px;
+        
+    }
+.comment-date{
+    
+    position: absolute;
+    right: 15px;
+}
     
 
     .comment-arrow{
         height: 30px;
         width: 30px;
-        left: -18px;
+        left: -15px;
         top: 15px;
         background-color: transparent;
         border-bottom: 2px solid rgb(182, 129, 129);
@@ -110,4 +129,8 @@ background-color: black;
     left: 5px;
 
 
+}
+.comment-date{
+    position: absolute;
+    right: 15px;
 }
