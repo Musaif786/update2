@@ -45,7 +45,7 @@ const Contacts = () => {
          <h1 className='comment-h1 mb-2'>Contact form</h1>
             <form id='forms' onSubmit={handlesubmit} style={{margin: "auto",padding:"15px",alignContent:"center",maxWidth:"700px"}}>
   <label htmlFor="name">Name</label>
-  <input type="text" name="name" id="name" placeholder='fullname' value={name} onChange={handleinput} />
+  <input type="text" name="name" id="name" placeholder='name' value={name} onChange={handleinput} />
       
   {/* <label htmlFor="email">Email</label>
   <input type="email" name="email" id="email" placeholder='email' value={email} onChange={handleinput} /> */}
