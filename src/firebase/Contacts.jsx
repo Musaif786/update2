@@ -27,7 +27,7 @@ const Contacts = () => {
     }
     const handlesubmit = (e)=>{
    e.preventDefault();
-   if(!name || !email || !contact || !comment ||! date){
+   if(!name|| !contact || !comment ||! date){
        toast.error("plzz provide value in each input field")
    }else{
        fireDb.child("zfwork").push(state, (err)=>{
