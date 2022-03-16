@@ -8,6 +8,7 @@ const Form= ()=>{
         fname:"",
         comnt: "",
         feedback:"",
+        
     })
     let name,value;
     const onchange=(e)=>{

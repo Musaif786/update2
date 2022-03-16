@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 //import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -19,10 +19,16 @@ import Home from "./components/Home";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import AnimationHome from "./components/AnimationHome";
 import AllContacts from "./components/AllContacts";
+import Auth from "./Auth/Auth";
+import Loader from "./components/Loader";
 
 const App = ()=> {
+  
     return(
         <> 
+        <Auth>
+
+        
         <Header/>
         <ToastContainer position='top-center'/>
         <Routes>        
@@ -37,6 +43,7 @@ const App = ()=> {
       
       
        </Routes>
+       </Auth>
 
        {/* <Animation/> */}
 

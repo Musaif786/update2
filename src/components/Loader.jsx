@@ -10,7 +10,7 @@ const Loader = () => {
             load.style.display ="none";
             
         }
-       setTimeout(loading,3000); 
+       setTimeout(loading,10000); 
     },[])
         
     return (

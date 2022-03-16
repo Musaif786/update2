@@ -143,7 +143,7 @@ useEffect(function(){
   return (
     <>
       <main>
-      <Loader/>
+       {/* <Loader/>  */}
       <Topbtn/>
       {/* <AnimationHome/> */}
       
